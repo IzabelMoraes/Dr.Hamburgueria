@@ -1,0 +1,49 @@
+header{
+    height: 4rem;
+    font-family: 'Sofia Sans';
+}
+
+.menu{
+    display: inline-flex;
+    position: relative;
+    top: 1rem;
+}
+
+.menu h1{
+    position: relative;
+    left: 2.75rem;
+    top: 0.625rem;
+}
+
+.menu li{
+    display: inline-flex;
+    position: relative;
+    left: 44rem;
+    margin-left: 1rem;
+    bottom: 0.375rem;
+}
+
+.icon-header{
+    width: 2rem;
+    height: 2rem; 
+}
+
+
+#logo{
+    position: relative; 
+    bottom:0.438rem; 
+    left: 1.875rem; 
+    right: 0.188rem;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#entre__cadastro:hover{
+    color: #2020C0;
+    font-weight: bold;
+    text-decoration: underline;
+}
