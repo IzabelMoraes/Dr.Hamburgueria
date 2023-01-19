@@ -1,0 +1,105 @@
+h2{
+    font-family: 'Sofia Sans';
+    margin-left: 0.5rem;
+    margin-top:1rem;
+    text-align: center;
+    font-size: 4.375rem;
+}
+
+.favoritos{
+    display: flex;
+}
+
+.estrela{
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 2rem;
+    position: relative; bottom: -0.5rem;
+}
+
+.texto{
+    font-family: 'Sofia Sans';
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    position: relative; top: 0.6rem
+}
+
+
+.caixa{
+    display: flex;
+    justify-content: left;   
+    overflow-x: auto;
+    padding: 2rem 0;
+   }
+
+.caixa li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 1.875rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(0 0 0 / 16%);
+    border-radius: 1rem; 
+    padding-bottom: 1.563rem;
+   }
+
+.caixa img, .current-item{
+    width: 14.25rem;
+    height: 10.75rem;
+    object-fit: cover; 
+    margin-bottom: 1.25rem;
+    transition: all 0.2s ease-out;    
+   }
+
+.caixa li:hover{ 
+    transform: scale(1.1);
+    cursor: pointer;
+    border-color: #333;
+   }
+
+.caixa h5{
+    font-size: 0.75rem;
+    color: #333;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    padding: 0.625rem;
+}
+
+.caixa h4{
+    font-size: 1.313rem;
+    margin-top: 1.125rem;
+}
+
+.caixa::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    position: relative;
+}
+
+
+/*.seta-left {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px #000 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+  }
+
+.seta-right{
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px #000 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform:rotate()
+}*/
+
+.seta-right:hover , .seta-left:hover{
+    cursor: pointer;
+}
