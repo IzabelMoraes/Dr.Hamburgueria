@@ -32,10 +32,9 @@ header{
 
 
 #logo{
-    width: 2rem;
-    height: 2rem; 
+    width: 2.075rem;
+    height: 2.075rem; 
     position: relative; 
-    bottom:0.438rem; 
     left: 1.875rem; 
     right: 0.188rem;
 }
