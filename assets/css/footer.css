@@ -1,0 +1,47 @@
+
+
+.redes__sociais{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.icon-face{
+    margin-left: 1rem;
+    transition: 1s;
+}
+
+.icon-face:hover{
+    background-color: #3b5998;
+    
+}
+
+.icon-insta{
+    margin-left: 1rem;
+    transition: 1s
+}
+
+.icon-insta:hover{
+    background-color: #517fa4;
+}
+
+.icon-whats{
+    margin-left: 1rem;
+    transition: 1s
+}
+
+.icon-whats:hover{
+    background-color: #34af23;
+}
+
+.icon-tube{
+    margin-left: 1rem;
+    transition: 1s
+}
+
+.icon-tube:hover{
+    background-color: #bb0000;
+}

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/barra-pesquisa.css">
     <link rel="stylesheet" href="./assets/css/slider.css">
     <link rel="stylesheet" href="./assets/css/favoritos.css">
     <link rel="stylesheet" href="./assets/css/promocoes.css">
@@ -15,11 +16,18 @@
 <body>
     <header>
         <section class="menu">
-            <img src="./assets/img/icons-header/logo-temporária.png" alt="" id="logo" class="icon-header">
+            <img src="./assets/img/icons-header/logo.png" alt="" id="logo">
             <h1>Dr.Hamburgueria</h1>
             <nav>
                 <ul>
-                    <li>Aqui vai ficar barra de pesquisa</li>
+                    <li>
+                        <div class="search-box">
+                            <input type="text" class="search-text" placeholder="Pesquisar">
+                            <a href="#" class="lupa-botao">
+                                <img src="./assets/img/icons-header/lupa.svg" alt="Lupa">
+                            </a>
+                        </div>
+                    </li>
                     <li><a href="#"><img src="./assets/img/icons-header/carrinho-compras.png" alt="Seus pedidos" class="icon-header"></a></li>
                     <li><a href="#" id="entre__cadastro">Entre ou cadastre-se</a></li>
                     <li><a href="#"><img src="./assets/img/icons-header/usuario-icon.png" alt="" class="icon-header"></a></li>
@@ -308,7 +316,13 @@
     </main>
 
     <footer>
-
+        <div class="footer-ondinha"></div>
+        <section class="redes__sociais">
+            <img src="./assets/img/icons-footer/facebook.png" alt="Facebook" class="icon-face">
+            <img src="./assets/img/icons-footer/instagram.png" alt="Instagram" class="icon-whats">
+            <img src="./assets/img/icons-footer/whatsapp.png" alt="Whatsapp" class="icon-whats">
+            <img src="./assets/img/icons-footer/youtube.png" alt="Youtube" class="icon-tube">
+        </section>
     </footer>
     
     <script src="./assets/js/slider.js"></script>
