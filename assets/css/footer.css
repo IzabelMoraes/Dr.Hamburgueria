@@ -1,4 +1,25 @@
+.linha__footer{
+    display: flex;
+    flex-direction: row;
+}
 
+.linha{
+    width: 25%;
+    height: 2px;
+    margin: 6px 0 5px 0;
+    background: #5856565c;
+    position: relative;
+}
+
+.linha:nth-last-child(1){
+    width: 75%;
+    left: 1%;
+}
+
+#footer-ondinha img{
+     width: 100vw;
+    height: 17vw;
+}
 
 .redes__sociais{
     width: 25px;
@@ -14,34 +35,35 @@
     transition: 1s;
 }
 
-.icon-face:hover{
-    background-color: #3b5998;
-    
+.icon-face:hover path{
+    fill: #0049CC;
 }
 
 .icon-insta{
     margin-left: 1rem;
-    transition: 1s
+    transition: 1s;
 }
 
-.icon-insta:hover{
-    background-color: #517fa4;
+.icon-insta:hover path{
+    fill: #70009F;
 }
 
 .icon-whats{
     margin-left: 1rem;
-    transition: 1s
+    transition: 1s;
 }
 
-.icon-whats:hover{
-    background-color: #34af23;
+.icon-whats:hover path{
+    fill: #007100;
 }
 
 .icon-tube{
     margin-left: 1rem;
-    transition: 1s
+    transition: 1s;
+    width: 30px;
+    height: 30px;
 }
 
-.icon-tube:hover{
-    background-color: #bb0000;
+ svg .icon-tube:hover path{
+    fill: #9A0000;
 }
