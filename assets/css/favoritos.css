@@ -75,19 +75,6 @@ h2{
 }
 
 
-.caixa h5{
-    font-size: 0.75rem;
-    color: #333;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-    padding: 0.625rem;
-}
-
-.caixa h4{
-    font-size: 1.313rem;
-    margin-top: 1.125rem;
-}
-
 .caixa::-webkit-scrollbar{
     display: none;
 }
