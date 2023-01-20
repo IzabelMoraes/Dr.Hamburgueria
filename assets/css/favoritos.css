@@ -46,6 +46,14 @@ h2{
     padding-bottom: 1.563rem;
    }
 
+.details{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 1.875rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(0 0 0 / 16%);
+}   
+
 .caixa img, .current-item{
     width: 14.25rem;
     height: 10.75rem;
@@ -59,6 +67,13 @@ h2{
     cursor: pointer;
     border-color: #333;
    }
+
+.details:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    border-color: #333;
+}
+
 
 .caixa h5{
     font-size: 0.75rem;
@@ -82,7 +97,7 @@ h2{
 }
 
 
-/*.seta-left {
+.arrow-left {
     position: absolute;
     padding: 20px;
     box-shadow: 2px -2px 0 1px #000 inset;
@@ -91,15 +106,15 @@ h2{
     transform: rotate(45deg);
   }
 
-.seta-right{
+.arrow-right{
     position: absolute;
     padding: 20px;
     box-shadow: 2px -2px 0 1px #000 inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
     transform:rotate()
-}*/
+}
 
-.seta-right:hover , .seta-left:hover{
+.arrow-right:hover , .arrow-left:hover{
     cursor: pointer;
 }
