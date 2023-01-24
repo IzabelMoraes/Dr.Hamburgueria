@@ -16,6 +16,20 @@
     left: 1%;
 }
 
+.logo-no-footer{
+    position: relative;
+}
+
+#logo-footer{
+    width: 2rem;
+    height: 2rem; 
+    position: relative;
+    left: 10%;
+    bottom: 223px;
+    background-color: white;
+    border-radius: 100%;
+}
+
 #footer-ondinha img{
      width: 100vw;
     height: 17vw;
