@@ -1,15 +1,31 @@
-.subtitulo-nome, h4{
+.titulo-sub-padrao{
     font-family: 'Sofia Sans';
-    
+    font-weight: normal;
 }
 
+.titulo-sub-padrao p{
+    font-size: 1rem;
+    color: rgb(69, 68, 68);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    position: relative; top: 0.6rem;
+}
 
+.texto-padrao-cardapio{
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    position: relative; top: 0.6rem;
+}
 
 .caixa{
+    font-family: 'Sofia Sans'; 
     display: flex;
     justify-content: left;   
     overflow-x: auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
    }
 
 .caixa li{
@@ -35,19 +51,23 @@
     transform: scale(1.1);
     cursor: pointer;
     border-color: #333;
-   }
-
-.caixa h5{
-    font-size: 0.75rem;
-    color: #333;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-    padding: 0.625rem;
 }
 
-.caixa h4{
+.caixa h2{
+    margin-bottom: 1.75rem;
+}
+
+.caixa h3{
     font-size: 1.313rem;
-    margin-top: 1.125rem;
+    margin-top: 1.75rem;
+    display: flex;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caixa::-webkit-scrollbar{
@@ -92,3 +112,4 @@
 .arrow-right:hover , .arrow-left:hover{
     cursor: pointer;
 }
+
