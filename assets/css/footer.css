@@ -36,8 +36,6 @@
 }
 
 .redes__sociais{
-    width: 25px;
-    height: 25px;
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -46,38 +44,68 @@
 
 .icon-face{
     margin-left: 1rem;
-    transition: 1s;
 }
 
-.icon-face:hover path{
-    fill: #0049CC;
+.icon-face:hover .rede-stroke{
+    fill: #1c4185;
+    stroke: #1c4185;
+}
+
+.icon-face:hover .rede-fill{
+    fill: #FFF;
 }
 
 .icon-insta{
     margin-left: 1rem;
-    transition: 1s;
 }
 
-.icon-insta:hover path{
-    fill: #70009F;
+.icon-insta:hover .rede-stroke{
+    fill: #bc36f6;
+    stroke: #bc36f6;
 }
 
-.icon-whats{
+.icon-insta:hover .rede-fill-insta{
+    fill: #bc36f6;
+}
+
+.icon-insta:hover .rede-fill{
+    fill: #FFF;
+}
+
+.icon-twit{
     margin-left: 1rem;
-    transition: 1s;
 }
 
-.icon-whats:hover path{
-    fill: #007100;
+.icon-twit:hover .rede-fill{
+    fill: #FFF;
+}
+
+.icon-twit:hover .rede-stroke{
+    fill: #4acff7;
+    stroke: #4acff7;
 }
 
 .icon-tube{
     margin-left: 1rem;
-    transition: 1s;
-    width: 30px;
-    height: 30px;
 }
 
- svg .icon-tube:hover path{
+.icon-tube:hover .rede-stroke{
     fill: #9A0000;
+    stroke: #9A0000;
+}
+
+.icon-tube:hover .rede-fill{
+    fill: #FFF;
+}
+
+.rede-fill {
+    fill: #6f6f6f;
+}
+
+.rede-fill-insta{
+    fill: #FFF;
+}    
+
+.rede-stroke {
+    stroke: #adadad;
 }
