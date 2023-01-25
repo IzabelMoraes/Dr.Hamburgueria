@@ -39,7 +39,7 @@
     padding-bottom: 1.563rem;
    }
 
-.caixa img, .current-item{
+.caixa img, .current-objeto{
     width: 14.25rem;
     height: 10.75rem;
     object-fit: cover; 
@@ -81,32 +81,24 @@
 
 .arrow-left{
     position: absolute;
-    border-radius: 0.625rem;
     height: 6.5rem;
     width: 2.5rem;
-    background: #dbdbdb center no-repeat ;
-    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 10%);
-    border-color: #dbdbdb;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 9999;
-    opacity: 80%;
+    opacity: 0%;
 }
 
 .arrow-right{
     position: absolute;
-    border-radius: 0.625rem;
     height: 6.5rem;
     width: 2.5rem;
-    background: #dbdbdb center no-repeat ;
-    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 10%);
-    border-color: #ffffff00;
     left: 0;
     top: 50%;
     z-index: 9999;
     transform: translateY(-50%);
-    opacity: 80%;
+    opacity: 0%;
 }
 
 .arrow-right:hover , .arrow-left:hover{
