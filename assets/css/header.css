@@ -15,10 +15,10 @@ header{
     top: 0.625rem;
 }
 
-.menu li{
+.menu-comeco li{
     display: inline-flex;
     position: relative;
-    left: 12rem;
+    left: 10.75rem;
     margin-left: 1rem;
 }
 

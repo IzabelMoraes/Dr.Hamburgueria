@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/usuário.css">
     <link rel="stylesheet" href="./assets/css/barra-pesquisa.css">
     <link rel="stylesheet" href="./assets/css/slider.css">
     <link rel="stylesheet" href="./assets/css/favoritos.css">
@@ -22,7 +23,7 @@
             <img src="./assets/img/icons-header/logo.png" alt="" id="logo">
             <h1>Dr.Hamburgueria</h1>
             <nav>
-                <ul>
+                <ul class="menu-comeco">
                     <li>
                         <div class="search-box">
                             <input type="text" class="search-text" placeholder="Pesquisar" list="historico">
@@ -39,18 +40,18 @@
                     </li>
                     <li><a href="#"><img src="./assets/img/icons-header/carrinho-compras.png" alt="Seus pedidos" class="icon-header"></a></li>
                     <li><a href="#" id="entre__cadastro">Entre ou cadastre-se</a></li>
-                    <li>
-                        <details>
-                            <summary>
-                                <a href="#"><img src="./assets/img/icons-header/usuario-icon.png" alt="" class="icon-header"></a>
-                            </summary>
-                            <p>Seu Perfil</p>
-                            <p>Pedidos</p>
-                            <p>Pagamentos</p>
-                            <p>Configurações</p>
-                        </details>
-                    </li>
                 </ul>
+                <section id="menu-nav">
+                    <button id="btn">
+                        <a href="#"><img src="./assets/img/icons-header/usuario-icon.png" alt="" class="icon-header-menu"></a>
+                    </button>
+                    <ul id="usuario">
+                        <li>Seu Perfil</li>
+                        <li>Pedidos</li>
+                        <li>Pagamentos</li>
+                        <li>Configurações</li>
+                    </ul>
+                </section>
             </nav>
         </section>
     </header>
@@ -514,7 +515,7 @@
             </a>
         </section>
     </footer>
-    
+    <script src="./assets/js/user-menu.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/carrosel.js"></script>
 </body>
