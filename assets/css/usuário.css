@@ -19,6 +19,11 @@
     font-size: 0.938rem;
     padding: 0.938rem;
     cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+}
+
+#usuario li:nth-last-child(1){
+    border-bottom: none;
 }
 
 #usuario li:hover{
