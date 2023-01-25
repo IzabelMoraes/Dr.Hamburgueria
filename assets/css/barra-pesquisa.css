@@ -2,7 +2,7 @@
     position: relative;
     left: 94%;
     transform: translate(-100%);
-    background-color: rgba(75, 73, 73, 0.948);
+    background-color: rgba(56, 55, 55, 0.948);
     height: 15px;
     width: 50vw;
     padding: 10px;
@@ -28,4 +28,8 @@
 .lupa-botao img{
     width: 1.375rem;
     height: 1.375rem; 
+}
+
+.search-text::placeholder{
+    color: white;
 }
