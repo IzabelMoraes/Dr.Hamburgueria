@@ -86,8 +86,8 @@
 
 .arrow-left{
     position: absolute;
-    height: 6.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -97,9 +97,9 @@
 
 .arrow-right{
     position: absolute;
-    height: 6.5rem;
-    width: 2.5rem;
-    left: 0;
+    height: 3rem;
+    width: 3rem;
+    left: 2rem;
     top: 50%;
     z-index: 9999;
     transform: translateY(-50%);
@@ -109,3 +109,25 @@
 .arrow-right:hover , .arrow-left:hover{
     cursor: pointer;
 }
+
+#seta-esquerda {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px rgb(234, 6, 6) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(222deg);
+    left: 2rem;
+    top: 40%;
+  }
+  
+  #seta-direita {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px  rgb(234, 6, 6) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(39deg);
+    right: 0;
+    top:40%;
+  }
