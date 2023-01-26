@@ -1,0 +1,105 @@
+.login{
+    font-family: 'Sofia Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgba(0, 0, 0, 0.411);
+    border-radius: 3rem;
+    position: relative;
+    right: 0;
+    left: 35vw;
+    width: 22rem;
+    height: 31rem;
+    margin-bottom: 5rem;
+}
+
+
+.form__separacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__separacao label{
+    margin: 0.75rem 0;
+}
+
+.form__separacao input{
+    width: 16rem;
+    height: 1.75rem;
+    border-radius: 1rem;
+    border-width: 0.063rem;
+    border-color: rgb(44, 43, 43);
+}
+
+#esqueci-senha:hover{
+    text-decoration: underline;
+    color: #2020C0;
+    font-weight: bold;
+}
+
+#esqueci-senha{
+    font-family: 'Sofia Sans';
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    position: relative;
+    top: 1rem;
+    left: 5rem;
+    font-size: 0.813rem;
+}
+
+#logo{
+    position: relative;
+    bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 100%;
+}
+
+
+.cadastro-botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro-botao img{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.cadastro-botao button{
+    border-width: 0.063rem;
+    border-radius: 1rem;
+    border-color: rgb(44, 43, 43);
+    background-color: white;
+    width: 16rem;
+    height: 2rem;
+    font-weight: 600;
+    font-size: 0.813rem;
+    margin-bottom: 1rem;
+}
+
+.cadastro-botao button:first-child{
+    margin-top: 4rem;
+}
+
+#entra a{
+    font-family: 'Sofia Sans';
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+    font-size: 1.375rem;
+}
+
+#entra{
+    width: 7rem;
+    height: 3rem;
+    border-width: 0.063rem;
+    border-color: #2020C0;
+    background-color: white;
+    border-radius: 0.75rem;
+    position: relative;
+    top: 3rem;
+}
