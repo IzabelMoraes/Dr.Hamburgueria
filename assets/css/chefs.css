@@ -5,12 +5,13 @@
 #chefs-titulo{
     font-size: 2rem;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .chefs-flex{
     display: flex;
     flex-direction: row;
+    padding: 0 0 0 3rem;
 }
 
 .chefs-pessoa{
@@ -20,19 +21,40 @@
 
 .chefs-pessoa h2{
     text-align: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
     font-size: 1.375rem;
 }
 
 .chefs-pessoa p{
     text-align: justify;
-    padding: 0 3rem 5rem;
+    padding: 0 5rem 0 3rem;
     line-height: 1.375rem;
 }
 
-.chefs-imagem{
+#p-daniel{
+    text-align: justify;
+    padding:0 0 2rem 1rem;;
+    line-height: 1.375rem;
+}
+
+.chef-imagem{
+    background-size: cover;
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chefs-pessoa-daniel{
+    background-image: url(../img/chefs-imagens/Daniel.jpg);
+}
+
+.chefs-pessoa-izabel{
+    background-image: url(../img/chefs-imagens/Izabel.jpg);
+}
+
+.chefs-pessoa-larissa{
+    background-image: url(../img/chefs-imagens/Larissa.jpg);
 }
