@@ -119,6 +119,7 @@
     transform: rotate(222deg);
     left: 2rem;
     top: 40%;
+    z-index: 1000;
   }
   
   #seta-direita {
@@ -130,4 +131,5 @@
     transform: rotate(39deg);
     right: 0;
     top:40%;
+    z-index: 1000;
   }
