@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css">    
         <link rel="stylesheet" href="./assets/css/botao-volta-pag.css">
         <link rel="stylesheet" href="./assets/css/login.css">
+        <link rel="stylesheet" href="./assets/css/modal.css">
         <link rel="stylesheet" href="./assets/css/footer.css">
         <title>Dr. Hambúrgueria</title>
     </head>
@@ -35,11 +36,57 @@
                 <section class="cadastro-botao">
                     <button>Cadastre-se com a Google<img src="./assets/img/login/google.png" alt="Google"></button>
                     <button>Cadastre-se com o Facebook<img src="./assets/img/login/facebook.png" alt="Facebook"></button>
-                    <button>Cadastre-se de outra forma</button>
+                    <button type="submit" id="cadastrar" onclick="showModal()">Cadastre-se de outra forma</button>
                 </section>
 
                 <button type="submit" id="entra"><a href="index.html">Entrar</a></button>
             </section>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span onclick="hideModal()">&times;</span>
+                    <form>
+                        <div class="box-grup-cadastro">  
+                            <ul class="box-cadastro">
+                                <div class="separacao">
+                                    <li>
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" id="nome" placeholder="Nome" required>
+                                    </li>    
+                                </div>   
+                            </ul>
+                            <ul class="box-cadastro">  
+                                <div class="separacao">  
+                                    <li>
+                                        <label for="n-telefone">Telefone:</label>
+                                        <input type="tel" id="n-telefone" placeholder="(XX)XXXXX-XXXX" required>
+                                    </li>
+                                </div> 
+                                <div class="separacao">
+                                    <li>
+                                        <label for="email">E-mail:</label>
+                                        <input type="email" id="email" placeholder="...@gmail.com" required>
+                                    </li>   
+                                </div>
+                                <div class="separacao">
+                                    <li>
+                                        <label for="senha">Senha:</label>
+                                        <input type="password" id="senha" placeholder="Crie uma senha" required>
+                                    </li>
+                                </div>
+                                <div class="separacao">
+                                    <li>
+                                        <label for="senha">Confirmar senha:</label>
+                                        <input type="password" id="senha" placeholder="Digite novamente sua senha" required>
+                                    </li>
+                                </div>
+                            </ul>                 
+                        </div>
+                        <h4>Em breve enviaremos um E-mail de confrimação!</h4>
+                        <input type="submit" value="Enviar cadastro" id="botao-cadastro" onclick="hideModal()">
+                    </form>   
+                </div>
+            </div>
 
         </main>
 
@@ -74,5 +121,7 @@
                 </a>
             </section>
         </footer>
+
+        <script src="./assets/js/modal.js"></script>
     </body>
 </html>
