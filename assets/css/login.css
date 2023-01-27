@@ -20,7 +20,9 @@
 }
 
 .form__separacao label{
-    margin: 0.75rem 0;
+    font-size: 0.875rem;
+    margin: 1rem 0;
+    font-weight: 600;
 }
 
 .form__separacao input{
@@ -28,7 +30,7 @@
     height: 1.75rem;
     border-radius: 1rem;
     border-width: 0.063rem;
-    border-color: rgb(44, 43, 43);
+    border-color: rgb(125, 125, 125);
 }
 
 #esqueci-senha:hover{
@@ -63,23 +65,28 @@
     align-items: center;
 }
 
+.cadastro-botao button:hover{
+    cursor: pointer;
+}
+
 .cadastro-botao img{
     width: 1.25rem;
     height: 1.25rem;
-    margin-right: 1rem;
+    margin-bottom: -0.25rem;
     margin-left: 1rem;
 }
 
 .cadastro-botao button{
     border-width: 0.063rem;
     border-radius: 1rem;
-    border-color: rgb(44, 43, 43);
+    border-color: rgb(148, 148, 148);
     background-color: white;
-    width: 16rem;
-    height: 2rem;
+    width: 14rem;
+    height: 1.875rem;
     font-weight: 600;
     font-size: 0.813rem;
     margin-bottom: 1rem;
+    font-family: 'Sofia Sans';
 }
 
 .cadastro-botao button:first-child{
