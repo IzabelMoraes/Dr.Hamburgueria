@@ -86,24 +86,32 @@
 
 .arrow-left{
     position: absolute;
-    height: 3rem;
-    width: 3rem;
-    right: 0;
+    right: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 9999;
-    opacity: 0%;
+    z-index: 100;
+    opacity: 90%;
+    background: #E38201 center no-repeat ;
+    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 10%);
+    border-color: #ffffff00;
+    border-radius: 0.625rem;
+    height: 6.5rem;
+    width: 3rem;
 }
 
 .arrow-right{
     position: absolute;
-    height: 3rem;
-    width: 3rem;
     left: 2rem;
     top: 50%;
-    z-index: 9999;
+    z-index: 100;
     transform: translateY(-50%);
-    opacity: 0%;
+    opacity: 90%;
+    background: #E38201 center no-repeat ;
+    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 10%);
+    border-color: #ffffff00;
+    border-radius: 0.625rem;
+    height: 6.5rem;
+    width: 3rem;
 }
 
 .arrow-right:hover , .arrow-left:hover{
@@ -113,11 +121,11 @@
 #seta-esquerda {
     position: absolute;
     padding: 20px;
-    box-shadow: 2px -2px 0 1px rgb(234, 6, 6) inset;
+    box-shadow: 2px -2px 0 1px rgb(0, 0, 0) inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
-    transform: rotate(222deg);
-    left: 2rem;
+    transform: rotate(42deg);
+    left: 2.5rem;
     top: 40%;
     z-index: 1000;
   }
@@ -125,11 +133,11 @@
   #seta-direita {
     position: absolute;
     padding: 20px;
-    box-shadow: 2px -2px 0 1px  rgb(234, 6, 6) inset;
+    box-shadow: 2px -2px 0 1px  rgb(0, 0, 0) inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
-    transform: rotate(39deg);
-    right: 0;
+    transform: rotate(220deg);
+    right: 1rem;
     top:40%;
     z-index: 1000;
   }
