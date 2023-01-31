@@ -27,3 +27,10 @@
     overflow-x: auto;
     padding: 1rem 0;
    }
+
+.info h3{
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    color: rgb(239, 158, 6);
+    font-weight: 600;
+}
