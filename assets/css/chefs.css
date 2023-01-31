@@ -11,13 +11,14 @@
 .chefs-flex{
     display: flex;
     flex-direction: row;
-    padding: 0 0 0 3rem;
 }
 
 .chefs-pessoa{
     display: flex;
     flex-direction: column;
+    width: 28rem;
 }
+
 
 .chefs-pessoa h2{
     text-align: center;
@@ -27,14 +28,9 @@
 
 .chefs-pessoa p{
     text-align: justify;
-    padding: 0 5rem 0 3rem;
     line-height: 1.375rem;
-}
-
-#p-daniel{
-    text-align: justify;
-    padding:0 0 2rem 1rem;;
-    line-height: 1.375rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
 }
 
 .chef-imagem{
