@@ -12,13 +12,12 @@
     transform: scale(1.1);
     opacity: 0;
     visibility: hidden;
-    transition: visibility 0.25s ease-in-out, transform 0.25s
-    ease-in-out, opacity 0.25s ease-in-out;
     z-index: 99999;
+    font-family: 'Sofia Sans';
    }
 
    .modal-content{
-    background-color: white;
+    background-color:#e28f22;
     padding: px;
     width: 500px;
     border-radius: 0.5rem;
@@ -57,6 +56,8 @@ form{
 .box-grup-cadastro{
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: -1rem;
 }
 
 .box-cadastro label{
@@ -65,7 +66,7 @@ form{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    margin-left: -20rem;
+    margin-left: -1rem;
 }   
 
 .box-cadastro input{
@@ -73,7 +74,7 @@ form{
     border-radius: 8px;
     box-shadow: 1px 1px 3px -1px #000000;
     align-items: center;
-    margin-left: -15rem;
+    margin-left: -0.5rem;
     width: 170px;
     height: 25px;
     padding: 0 0.5rem;
@@ -92,7 +93,7 @@ form{
 
 #botao-cadastro{
     font-size: 15px;
-    border-color: #2020C0;
+    border-color: #000000;
     background-color: white;
     width: 150px;
     height: 30px;
@@ -112,12 +113,14 @@ form{
 }
 
 .modal-content{
-    font-family: 'Sofia Sans';
     text-align: center;
     position: relative;
 }
 
 h4{
     position:relative;
+    top: 2rem;
+    font-weight: bold;
     top: 1rem;
 }
+
