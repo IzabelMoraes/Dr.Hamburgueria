@@ -11,6 +11,7 @@
     width: 22rem;
     height: 31rem;
     margin-bottom: 5rem;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 }
 
 
@@ -104,7 +105,7 @@
     width: 7rem;
     height: 3rem;
     border-width: 0.063rem;
-    border-color: #2020C0;
+    border-color: #3B67BC;
     background-color: white;
     border-radius: 0.75rem;
     position: relative;
