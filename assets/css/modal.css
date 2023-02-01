@@ -17,10 +17,10 @@
    }
 
    .modal-content{
-    background-color:#e28f22;
-    padding: px;
-    width: 500px;
-    border-radius: 0.5rem;
+    background-color:#ffffff;
+    padding: 40px;
+    width: 300px;
+	box-shadow: 9px 7px 5px rgba(59, 57, 57, 0.77);
    }
 
    span{
@@ -66,7 +66,9 @@ form{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    margin-left: -1rem;
+    margin-left: -0.3rem;
+    position: relative;
+    right: 6rem;
 }   
 
 .box-cadastro input{
@@ -75,12 +77,14 @@ form{
     box-shadow: 1px 1px 3px -1px #000000;
     align-items: center;
     margin-left: -0.5rem;
-    width: 170px;
-    height: 25px;
+    width: 300px;
+    height: 30px;
     padding: 0 0.5rem;
     margin-top: 1rem;
     outline: none;
     font-size: 13px;
+    position: relative;
+    left: -0.3em;
 }
 
 .box-cadastro input:hover{
@@ -93,7 +97,7 @@ form{
 
 #botao-cadastro{
     font-size: 15px;
-    border-color: #000000;
+    border-color:#3B67BC;
     background-color: white;
     width: 150px;
     height: 30px;
@@ -110,6 +114,7 @@ form{
     align-items: center;
     position: relative;
     bottom: 0.5rem;
+    left: -0.9rem;
 }
 
 .modal-content{
@@ -124,3 +129,23 @@ h4{
     top: 1rem;
 }
 
+#logo-bot{
+    position: relative;
+    bottom: 3rem;
+    width: 4rem;
+    height: 4rem;
+    left: 1rem;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.error-validation{
+    color: #FF1A1A;
+    position: absolute;
+    top:57px;
+    font-size: .8rem;
+}
+
+.template{
+    display: none;
+}

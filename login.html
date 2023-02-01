@@ -48,11 +48,11 @@
                     <form>
                         <div class="box-grup-cadastro">  
                             <ul class="box-cadastro">
-                                <img id="logo" src="./assets/img/logo.ico" alt="#" >
+                                <img id="logo-bot" src="./assets/img/logo.ico" alt="#" >
                                 <div class="separacao">
                                     <li>
                                         <label for="nome">Nome:</label>
-                                        <input type="text" id="nome" placeholder="Nome" required>
+                                        <input type="text" id="name" placeholder="Nome" required>
                                     </li>    
                                 </div>   
                             </ul>
@@ -72,7 +72,7 @@
                                 <div class="separacao">
                                     <li>
                                         <label for="senha">Senha:</label>
-                                        <input type="password" id="senha" placeholder="Crie uma senha" required>
+                                        <input type="password" id="senha" placeholder="Crie uma senha" pattern="^(?=.*[a-z)(?=.*[A-Z])(?=.*[0-9)(?!.*[ !@#$%^&_=+-]).{6,12}$" required>
                                     </li>
                                 </div>
                                 <div class="separacao">
@@ -84,11 +84,11 @@
                             </ul>                 
                         </div>
                         <h4>Em breve enviaremos um E-mail de confrimação!</h4>
-                        <input type="submit" value="Enviar cadastro" id="botao-cadastro" onclick="hideModal()">
+                        <input type="submit" value="Confirmar" id="botao-cadastro" onclick="hideModal()">
                     </form>   
                 </div>
             </div>
-
+            <p class="error-validation template"></p>
         </main>
 
 
@@ -132,5 +132,6 @@
         </footer>
 
         <script src="./assets/js/modal.js"></script>
+    
     </body>
 </html>
