@@ -1,0 +1,12 @@
+#volta img{
+    width: 2.5rem;
+    position: relative;
+    left: 0.5rem;
+    top: 0.5rem;
+    height: 2.5rem;
+    position: relative;
+    background: #E38201;
+    transform: rotate(180deg);
+    margin: 0.125rem;
+    border-radius: 50%;
+}
