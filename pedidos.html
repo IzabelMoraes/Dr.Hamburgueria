@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/botao-volta.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <title>Dr. Hambúrgueria</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="volta"><img src="./assets/img/arrow.png" alt="Voltar para a página inicial"></a>
+    </header> 
+
+    <main id="texto">
+        <h3>Para realizar a compra preencha o formulário a seguir!</h3>
+        <h4>Seus dados serão armazenados com segurança!</h4>
+
+        <div>
+            <form action="/action_page.php">
+              <label for="fname">Nome</label>
+              <input type="text" id="name" name="namee" placeholder="Nome completo">
+          
+              <label for="lname">Endereço</label>
+              <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+          
+              <label for="lname">Complemento</label>
+              <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+            
+              <input type="submit" value="Realizar pedido">
+            </form>
+
+        <h3>Forma de pagamento</h3>
+        <h4>Seus dados serão armazenados com segurança!</h4>
+        <button class="button1">Cartão de Crédito</button>
+        <button class="button2">Cartão de Débito</button>
+        <button class="button3">Em Dinheiro</button>
+
+        <h3>Sua compra foi realizada!</h3>
+        <h4>Confira logo abaixo!</h4>
+
+        <button class="button">Finalizar compras</button>
+    </main>
+
+    <section class="linha__footer">
+        <section class="linha"><span></span></section>
+        <section class="linha"><span></span></section>
+    </section>
+
+    <section class="logo-no-footer">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 320" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(227, 130, 1, 1)" offset="0%"></stop><stop stop-color="rgba(255, 206.33, 35.362, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,64L10,64C20,64,40,64,60,69.3C80,75,100,85,120,80C140,75,160,53,180,85.3C200,117,220,203,240,240C260,277,280,267,300,240C320,213,340,171,360,138.7C380,107,400,85,420,64C440,43,460,21,480,10.7C500,0,520,0,540,26.7C560,53,580,107,600,117.3C620,128,640,96,660,117.3C680,139,700,213,720,202.7C740,192,760,96,780,69.3C800,43,820,85,840,106.7C860,128,880,128,900,112C920,96,940,64,960,53.3C980,43,1000,53,1020,85.3C1040,117,1060,171,1080,165.3C1100,160,1120,96,1140,58.7C1160,21,1180,11,1200,48C1220,85,1240,171,1260,202.7C1280,235,1300,213,1320,170.7C1340,128,1360,64,1380,69.3C1400,75,1420,149,1430,186.7L1440,224L1440,320L1430,320C1420,320,1400,320,1380,320C1360,320,1340,320,1320,320C1300,320,1280,320,1260,320C1240,320,1220,320,1200,320C1180,320,1160,320,1140,320C1120,320,1100,320,1080,320C1060,320,1040,320,1020,320C1000,320,980,320,960,320C940,320,920,320,900,320C880,320,860,320,840,320C820,320,800,320,780,320C760,320,740,320,720,320C700,320,680,320,660,320C640,320,620,320,600,320C580,320,560,320,540,320C520,320,500,320,480,320C460,320,440,320,420,320C400,320,380,320,360,320C340,320,320,320,300,320C280,320,260,320,240,320C220,320,200,320,180,320C160,320,140,320,120,320C100,320,80,320,60,320C40,320,20,320,10,320L0,320Z"></path></svg>
+        <div class="tooltip-login">
+            <a href="index.html"><img src="./assets/img/logo.ico" alt="Ao clicar será direcionado para o topo dessa página" id="logo-footer"></a>
+            <span class="tooltiptext-login">Ao clicar você será direcionado para a página principal</span>
+        </div>
+    </section>
+
+    <section class="redes__sociais">
+        <!--Facebook-->
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 34 34" class="icon-face"><g fill="none" fill-rule="evenodd"><path d="M32.69 16.845c0 8.75-7.094 15.844-15.845 15.844C8.095 32.69 1 25.596 1 16.845S8.094 1 16.845 1c8.75 0 15.845 7.094 15.845 15.845" class="rede-stroke"></path> <path d="M14.542 17.063v7.735c0 .112.085.202.19.202h2.706c.104 0 .189-.09.189-.202v-7.861h1.961c.099 0 .181-.08.19-.185l.188-2.368c.01-.118-.078-.219-.189-.219h-2.15v-1.68c0-.394.3-.713.672-.713h1.511c.105 0 .19-.09.19-.202V9.202C20 9.09 19.915 9 19.81 9h-2.554c-1.498 0-2.714 1.29-2.714 2.882v2.283H13.19c-.105 0-.19.09-.19.202v2.368c0 .112.085.202.19.202h1.352v.126" class="rede-fill"></path></g>
+            </svg>
+        </a>
+        <!--Instagram-->
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 34 34" class="icon-insta"><g fill="none" fill-rule="evenodd"><path stroke="#ADADAD" d="M32.69 16.845c0 8.75-7.094 15.844-15.845 15.844C8.095 32.69 1 25.596 1 16.845S8.094 1 16.845 1c8.75 0 15.845 7.094 15.845 15.845" class="rede-stroke"></path> <path fill="#6F6F6F" d="M20.017 24.748H13.73A4.735 4.735 0 0 1 9 20.018V13.73A4.735 4.735 0 0 1 13.73 9h6.287a4.736 4.736 0 0 1 4.73 4.73v6.287a4.736 4.736 0 0 1-4.73 4.73z" class="rede-fill"></path> <path fill="#FFF" d="M16.938 19.358a2.487 2.487 0 0 1-2.484-2.484 2.487 2.487 0 0 1 2.484-2.484 2.487 2.487 0 0 1 2.485 2.484 2.487 2.487 0 0 1-2.485 2.484zm0-6.362a3.882 3.882 0 0 0-3.878 3.878 3.882 3.882 0 0 0 3.878 3.878 3.883 3.883 0 0 0 3.879-3.878 3.883 3.883 0 0 0-3.879-3.878zM21.043 11.812a.923.923 0 1 0 0 1.846.923.923 0 0 0 0-1.846" class="rede-fill-insta"></path></g></svg>
+        </a>
+        <!--Twitter-->
+        <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 34 34" class="icon-twit"><g fill="none" fill-rule="evenodd"><path stroke="#ADADAD" d="M32.69 16.845c0 8.75-7.094 15.844-15.845 15.844C8.095 32.69 1 25.596 1 16.845S8.094 1 16.845 1c8.75 0 15.845 7.094 15.845 15.845" class="rede-stroke"></path> <path fill="#6F6F6F" d="M24.94 11.558c-.508.227-1.068.365-1.616.456.26-.044.644-.508.798-.697.234-.287.428-.613.538-.966.014-.028.024-.063-.004-.083-.035-.014-.057-.007-.085.007a8.331 8.331 0 0 1-1.92.724.13.13 0 0 1-.132-.034c-.056-.063-.109-.121-.168-.17a3.409 3.409 0 0 0-.93-.562 3.27 3.27 0 0 0-1.427-.226 3.471 3.471 0 0 0-2.445 1.257 3.285 3.285 0 0 0-.651 1.287c-.113.454-.104.902-.035 1.36.01.076.004.087-.066.076-2.637-.387-4.823-1.318-6.597-3.312-.077-.087-.119-.087-.182.007-.777 1.147-.4 2.992.57 3.899.13.12.262.241.406.351-.053.01-.698-.058-1.274-.351-.076-.049-.115-.02-.122.065-.007.124.004.238.02.373.15 1.164.967 2.24 2.086 2.66.133.055.28.104.423.128-.255.055-.518.094-1.249.038-.09-.017-.126.027-.09.114.549 1.477 1.734 1.916 2.622 2.167.12.02.239.02.358.048-.007.01-.015.01-.021.02-.295.443-1.316.773-1.792.937a6.5 6.5 0 0 1-2.721.343c-.146-.02-.177-.019-.217 0-.04.025-.005.06.042.097.186.12.375.228.567.331.58.304 1.186.546 1.819.718 3.268.89 6.95.236 9.404-2.17 1.928-1.888 2.603-4.493 2.603-7.101 0-.102.123-.158.195-.212.501-.372.9-.817 1.274-1.314.084-.111.079-.21.079-.251v-.014c0-.042.005-.029-.06 0" class="rede-fill"></path></g></svg>
+        </a>
+        <!--Youtube-->
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 34 34" class="icon-tube"><g fill="none" fill-rule="evenodd"><g><g><g><path d="M31.69 15.845c0 8.75-7.094 15.844-15.845 15.844C7.095 31.69 0 24.596 0 15.845S7.094 0 15.845 0c8.75 0 15.845 7.094 15.845 15.845" transform="translate(-286 -377) translate(131 378) translate(156)" class="rede-stroke"></path> <path d="M18.3 16.229l-3.602 2.117c-.157.09-.298-.031-.298-.222V13.78c0-.194.145-.315.302-.22l3.628 2.23c.16.097.133.345-.03.44zm5.7-2.497C24 11.671 22.44 10 20.517 10h-9.034C9.56 10 8 11.67 8 13.732v4.536C8 20.329 9.56 22 11.483 22h9.034C22.441 22 24 20.33 24 18.268v-4.536z" transform="translate(-286 -377) translate(131 378) translate(156)" class="rede-fill"></path></g></g></g></g></svg>
+        </a>
+
+        <!--Frase-->
+
+         <p id="rede__sociais-frase">Siga nossas redes sociais para mais informações!</p>
+    </section>
+</body>
+</html>
