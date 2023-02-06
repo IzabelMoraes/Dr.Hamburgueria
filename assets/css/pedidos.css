@@ -1,62 +1,68 @@
 main{
-    font-family: 'Sofia Sans';
+  font-family: 'Sofia Sans';
 }
 
 input[type=text]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-input[type=submit] {
-    width: 50%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    position: relative;
-    left: 20rem;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .formulario {
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-  .button1,.button2,.button3{
-    background-color: #f60606;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    margin: 4px 2px;
-    cursor: pointer;
-    position: relative;
-    left: 20rem;
+.formulario {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#centralizar{
+  text-align: center;
+}
+
+#img1, #img2, #img3{
+  width: 15.25rem;
+  height: 10lauto;
+  text-align: center;
+  margin-left: 2rem;
 }
 
 .button{
-    width: 50%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    position: relative;
-    left: 20rem;
+  margin-top:30px;
+  padding:20px 30px;
+  height: 4rem;
+  width: 15rem;
+  border-radius:20px;
+  background-color: #32a345;
+  color:#FFF;
+  display:inline-block;
+  cursor:pointer;
+  margin-right:30px;
+}
+
+.button:hover {
+  background-color:#48d05f;
+}
+
+.button {
+  color: #000;
+  text-decoration: none;
+}
+
+#centro{
+text-align: center;
+}
+
+#div1{
+width: 640px;
+height: 100px;
+display: inline-block;
+margin-right: 5rem;
+}
+
+#div2{
+width: 640px;
+height: 100px;
+display: inline-block;
 }

@@ -66,30 +66,34 @@
         <h3>Para realizar a compra preencha o formulário a seguir!</h3>
         <h4>Seus dados serão armazenados com segurança!</h4>
 
+        <!--Inicio do formulário de endereço-->
         <div class="formulario">
             <form action="/action_page.php">
               <label for="name">Nome</label>
               <input type="text" id="name" name="name" placeholder="Nome completo">
-          
-              <label for="endereco">Endereço</label>
-              <input type="text" id="endereco" name="endereco" placeholder="Endereço">
-          
-              <label for="complemento">Complemento</label>
-              <input type="text" id="complemento" name="complemento" placeholder="Complemento">
-            
-              <input type="submit" value="Realizar pedido">
+              <div id="div1">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+              </div>
+
+              <div id="div2">
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+              </div>
             </form>
 
             <h3>Forma de pagamento</h3>
             <h4>Seus dados serão armazenados com segurança!</h4>
-            <button class="button1">Cartão de Crédito</button>
-            <button class="button2">Cartão de Débito</button>
-            <button class="button3">Em Dinheiro</button>
 
-            <h3>Sua compra foi realizada!</h3>
-            <h4>Confira logo abaixo!</h4>
-
-            <button class="button">Finalizar compras</button>
+            <!--Formulário de pagamento-->
+            <div id="centralizar">
+                <img id="img1" src="./assets/img/pagamentos/Group 136.png" alt="Cartão de crédito">
+                <img id="img2" src="./assets/img/pagamentos/Group 90.png" alt="Cartão de débito">
+                <img id="img3"src="./assets/img/pagamentos/Group 92.png" alt="Em dinheiro">
+            </div>
+            <div id="centro">
+                <button class="button">Finalizar compras</button>
+            </div>
         </div>
     </main>
 
