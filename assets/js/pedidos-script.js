@@ -48,6 +48,8 @@ modelsJson.map((item, index)=>{
         c('.modelsWindowArea').style.opacity = 0; //criando uma animação
         //corrigir, faltou o "a" do opacity - Valeu Gilberto dos Santos.
         c('.modelsWindowArea').style.display = 'flex';
+        //mudando z-index
+        c('.modelsWindowArea').style.zIndex = '1000';
         setTimeout(()=> {
             c('.modelsWindowArea').style.opacity = 1; //mostrando a janela, sem Timeout, não vemos o efeito
         }, 200);
@@ -61,6 +63,17 @@ modelsJson.map((item, index)=>{
 });
 
 //Ações do Modal - janela
+function closeModal(){
+    c('.modelsWindowArea').style.opacity = 0; //criando uma animação
+    setTimeout(()=> {
+        c('.modelsWindowArea').style.display = 'none'; //fechando a janela, sem Timeout, não vemos o efeito
+    }, 500);
+    //mostrar o funcionamento via console do navegador, antes de atribuir aos botões
+}
+
+cs('.modelsInfo--cancelButton, .modelsInfo--cancelMobileButton').forEach((item)=>{
+    item.addEventListener('click', closeModal);
+});
 
 c('.modelsInfo--qtmenos').addEventListener('click', ()=>{
     if(modalQt > 1) {

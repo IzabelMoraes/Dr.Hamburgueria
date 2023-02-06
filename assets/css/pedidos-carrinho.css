@@ -95,7 +95,7 @@ h1 {
     color:#FFF;
     font-size:22px;
     cursor:pointer;
-    margin-top:-25px;
+    margin-top:-62px;
     transition:all ease .2s;
 }
 
@@ -238,6 +238,11 @@ h1 {
     bottom: 62px;
     left: 156px;
     border-radius: 13px;
+}
+
+.modelsInfo--qtarea.modal{
+    bottom: 0;
+    left: 0;
 }
 
 .modelsInfo--qtarea button {
