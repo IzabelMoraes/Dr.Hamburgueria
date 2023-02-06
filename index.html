@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/usuário.css">
     <link rel="stylesheet" href="./assets/css/barra-pesquisa.css">
     <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/pedidos-carrinho.css">
     <link rel="stylesheet" href="./assets/css/favoritos.css">
     <link rel="stylesheet" href="./assets/css/promocoes.css">
     <link rel="stylesheet" href="./assets/css/chefs.css">
@@ -17,7 +18,7 @@
     <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
     <title>Dr.Hamburgueria</title>
 </head>
-<body>
+<body onload="resetData()">
     <header  id="voltar">
         <section class="menu">
             <img src="./assets/img/icons-header/logo.png" alt="" id="logo">
@@ -106,34 +107,68 @@
                 <h2 class="texto">Favoritos da semana</h2>
                 <img src="./assets/img/favoritos/estrela.png" alt="" class="estrela">
             </section>
-            <section> 
-                    <section class="container" data-type="nav-menu">
-                        <button class="arrow-left control" aria-label="Previous-image"></button>
-                        <div  id="seta-esquerda"></div>
-                        <button class="arrow-right control" aria-label="Next-image"></button>
-                        <div id="seta-direita"></div>
-                        <section class="caixa">
-                            <section class="details">                  
-                                <img src="./assets/img/favoritos/hambuguer-doce.jpg" class="item current-item">
-                            </section>
-                            <section class="details">
-                                <img src="./assets/img/favoritos/hamburguer-bacon.jpg" class="item ">
-                            </section>
-                            <section class="details">
-                                <img src="./assets/img/favoritos/hamburguer-cheedar.png" class="item"> 
-                            </section>
-                            <section class="details">
-                                <img src="./assets/img/favoritos/hamburguer-doritos.jpg" class="item">
-                            </section>
-                            <section class="details">
-                                <img src="./assets/img/favoritos/hamburguer-vegano.jpg" class="item"> 
-                                <section class="details">
-                                    <img src="./assets/img/favoritos/hambúrguer-frango.jpg" class="item"> 
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-            </section>    
+            <div class="container" data-type="nav-menu">
+                <button class="arrow-left control" aria-label="Previous-image"></button>
+                <div  id="seta-esquerda"></div>
+                <button class="arrow-right control" aria-label="Next-image"></button>
+                <div id="seta-direita"></div>
+                <div class="models">
+                    <div class="models-item item">
+                        <a href="">
+                            <div class="models-item--img"><img src="" /></div>
+                            <div class="models-item--add">+</div>
+                        </a>
+                        <div class="models-item--name">--</div>
+                        <div class="models-item--price">R$ --</div> 
+                        <div class="models-item--desc">--</div>     
+                    </div>
+                    <div class="cart--item">
+                        <img src="" />
+                        <div class="cart--item-nome">--</div>
+                        <div class="cart--item--qtarea">
+                            <button class="cart--item-qtmenos">-</button>
+                            <div class="cart--item--qt">1</div>
+                            <button class="cart--item-qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-carrinho">
+                <div class="models-area"></div>
+            </div>
+            <div class="modelsWindowArea">
+                <div class="modelsWindowBody">
+                    <div class="modelsInfo--cancelMobileButton">Voltar</div>
+                    <div class="modelsBig">
+                        <img src="" />
+                    </div>
+                    <div class="modelsInfo">
+                        <h1>--</h1>
+                        <div class="modelsInfo--sizearea">
+                            <div class="modelsInfo--desc">--</div>
+                            <div class="modelsInfo--sector">Escala</div>
+                            <div class="modelsInfo--sizes">
+                                <div data-key="0" class="modelsInfo--size"><span>--</span></div>
+                                <div data-key="1" class="modelsInfo--size"><span>--</span></div>
+                                <div data-key="2" class="modelsInfo--size selected"><span>--</span></div>
+                            </div>
+                        </div>
+                        <div class="modelsInfo--pricearea">
+                            <div class="modelsInfo--sector">Preço</div>
+                            <div class="modelsInfo--price">
+                                <div class="modelsInfo--actualPrice">R$ --</div>
+                                <div class="modelsInfo--qtarea">
+                                    <button class="modelsInfo--qtmenos">-</button>
+                                    <div class="modelsInfo--qt">1</div>
+                                    <button class="modelsInfo--qtmais">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modelsInfo--addButton"><a href="./pedidos.html">Adicionar ao carrinho</a></div>
+                        <div class="modelsInfo--cancelButton">Cancelar</div>
+                    </div>
+                </div>
+            </div>    
         </section>
 
         <!--Section carousel Promoções-->
@@ -535,6 +570,8 @@
     </footer>
     <script src="./assets/js/user-menu.js"></script>
     <script src="./assets/js/slider.js"></script>
+    <script type="text/javascript" src="./assets/js/models.js"></script>
+    <script type="text/javascript" src="./assets/js/pedidos-script.js"></script>
     <script src="./assets/js/carrosel.js"></script>
 </body>
 </html>

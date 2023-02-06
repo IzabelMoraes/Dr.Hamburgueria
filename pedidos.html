@@ -3,46 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;300;400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/botao-volta.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/pedidos.css">
+    <link rel="stylesheet" href="./assets/css/pedidos-carrinho.css">
     
     <title>Dr. Hambúrgueria</title>
 </head>
-<body>
+<body onload="loadInfo()">
     <header>
         <a href="index.html" id="volta"><img src="./assets/img/arrow.png" alt="Voltar para a página inicial"></a>
     </header> 
 
-    <main id="texto">
+    <main>
+        <!--Começo do carrinho-->
+        <div class="preco">
+            <div class="cart--area">
+                <h1>Carrinho de Compras</h1>
+                <h2>Você está com 1 Produto no total !</h2>
+                <img src="" alt="" id="imagem" style="width: 250px; height: 150px; border-radius: 10px;">
+                <!--<img src="" alt="" id="imagem">-->
+                <div class="cart"></div>
+                <div class="modelsInfo--qtarea">
+                    <button class="modelsInfo--qtmenos" >-</button>
+                    <div class="modelsInfo--qt" id="quantidade" >1</div>
+                    <button class="modelsInfo--qtmais">+</button>
+                </div>
+                <div class="lista">
+                    <h2>Lista de compras</h2>
+                    <h3>Você está com 1 Produto no total!</h3>
+                </div>
+                <div class="cart--details">
+                    <div class="cart--totalitem nome">
+                        <span>Pedidos</span>
+                        <h2 id="nome">-</h2>
+                    </div>
+                    <div class="cart--totalitem subtotal" >
+                        <span>Subtotal</span>
+                        <span id="subtotal">R$ --</span>
+                    </div>
+                    <div class="cart--totalitem desconto">
+                        <span>Desconto (-10%)</span>
+                        <span  id="desconto">R$ --</span>
+                    </div>
+                    
+                    <div class="botoes">
+                        <div class="cart--finalizar"><a href="./index.html">Confirmar</a></div>
+                        <button class="botao-cancela">Cancelar Pedido</button>
+                        <button class="adicionar-botao"><a href="./index.html" >Adicionar mais no Carrinho</a></button>
+                        <div class="cart--totalitem total big">
+                            <span>Valor Total:</span>
+                            <span  id="total">R$ --</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Final do carrinho-->
         <h3>Para realizar a compra preencha o formulário a seguir!</h3>
         <h4>Seus dados serão armazenados com segurança!</h4>
 
-        <div>
+        <div class="formulario">
             <form action="/action_page.php">
-              <label for="fname">Nome</label>
-              <input type="text" id="name" name="namee" placeholder="Nome completo">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Nome completo">
           
-              <label for="lname">Endereço</label>
+              <label for="endereco">Endereço</label>
               <input type="text" id="endereco" name="endereco" placeholder="Endereço">
           
-              <label for="lname">Complemento</label>
+              <label for="complemento">Complemento</label>
               <input type="text" id="complemento" name="complemento" placeholder="Complemento">
             
               <input type="submit" value="Realizar pedido">
             </form>
 
-        <h3>Forma de pagamento</h3>
-        <h4>Seus dados serão armazenados com segurança!</h4>
-        <button class="button1">Cartão de Crédito</button>
-        <button class="button2">Cartão de Débito</button>
-        <button class="button3">Em Dinheiro</button>
+            <h3>Forma de pagamento</h3>
+            <h4>Seus dados serão armazenados com segurança!</h4>
+            <button class="button1">Cartão de Crédito</button>
+            <button class="button2">Cartão de Débito</button>
+            <button class="button3">Em Dinheiro</button>
 
-        <h3>Sua compra foi realizada!</h3>
-        <h4>Confira logo abaixo!</h4>
+            <h3>Sua compra foi realizada!</h3>
+            <h4>Confira logo abaixo!</h4>
 
-        <button class="button">Finalizar compras</button>
+            <button class="button">Finalizar compras</button>
+        </div>
     </main>
 
     <section class="linha__footer">
@@ -81,5 +129,8 @@
 
          <p id="rede__sociais-frase">Siga nossas redes sociais para mais informações!</p>
     </section>
+
+    <script type="text/javascript" src="./assets/js/models.js"></script>
+    <script src="./assets/js/pedidos.js"></script>
 </body>
 </html>
