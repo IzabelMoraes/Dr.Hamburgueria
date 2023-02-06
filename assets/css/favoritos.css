@@ -218,3 +218,11 @@
     top:44%;
     z-index: 1000;
   }
+
+  #icone{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    bottom: 9.5rem;
+    left: 5rem;
+  }
