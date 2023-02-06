@@ -62,6 +62,84 @@
     transition: all 0.2s ease-out;    
    }
 
+
+.botao-add {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:25px;
+    background-color:#ed9900;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    cursor:pointer;
+    margin-top: -41px;
+    margin-bottom: 10px;
+    transition:all ease .2s;
+}
+
+.botao-add:hover {
+    background-color:#c88a18;
+}
+
+.botao-add-combo {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:25px;
+    background-color:#ed9900;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    cursor:pointer;
+    margin-top: -41px;
+    margin-bottom: 10px;
+    transition:all ease .2s;
+}
+
+.botao-add-combo:hover {
+    background-color:#c88a18;
+}
+
+.botao-add-doce {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:25px;
+    background-color:#ed9900;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    cursor:pointer;
+    margin-top: -41px;
+    margin-bottom: 10px;
+    transition:all ease .2s;
+}
+
+.botao-add-doce:hover {
+    background-color:#c88a18;
+}
+
+
+.botao-add-salgado {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:25px;
+    background-color:#ed9900;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    cursor:pointer;
+    margin-top: -41px;
+    margin-bottom: 10px;
+    transition:all ease .2s;
+}
+
+.botao-add-salgado:hover {
+    background-color:#c88a18;
+}
+
 .caixa li:hover{ 
     transform: scale(1.1);
     cursor: pointer;
@@ -100,7 +178,7 @@
 
 .arrow-right{
     position: absolute;
-    left: 2rem;
+    left: 1rem;
     top: 50%;
     z-index: 100;
     transform: translateY(-50%);
@@ -124,8 +202,8 @@
     border: solid transparent;
     border-width: 0 0 2px 2px;
     transform: rotate(42deg);
-    left: 2.5rem;
-    top: 40%;
+    left: 1.5rem;
+    top: 44%;
     z-index: 1000;
   }
   
@@ -137,6 +215,6 @@
     border-width: 0 0 2px 2px;
     transform: rotate(220deg);
     right: 1rem;
-    top:40%;
+    top:44%;
     z-index: 1000;
   }

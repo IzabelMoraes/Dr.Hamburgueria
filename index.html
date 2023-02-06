@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/css/promocoes.css">
     <link rel="stylesheet" href="./assets/css/chefs.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <script type="text/javascript" src="./assets/js/models.js"></script>
     <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
     <title>Dr.Hamburgueria</title>
 </head>
@@ -41,7 +42,12 @@
                             </datalist>
                         </div>
                     </li>
-                    <li><a href="pedidos.html"><img src="./assets/img/icons-header/carrinho-compras.png" alt="Seus pedidos" class="icon-header"></a></li>
+                    <li>          
+                        <div class="menu-openner">
+                            <span>0</span>        
+                            <span class="material-icons"><a href="pedidos.html"><img src="./assets/img/icons-header/carrinho-compras.png" alt="Seus pedidos" class="icon-header"></a></span>
+                        </div>
+                    </li>
                     <li><a href="login.html" id="entre__cadastro">Entre ou cadastre-se</a></li>
                 </ul>
                 <section id="menu-nav">
@@ -107,11 +113,7 @@
                 <h2 class="texto">Favoritos da semana</h2>
                 <img src="./assets/img/favoritos/estrela.png" alt="" class="estrela">
             </section>
-            <div class="container" data-type="nav-menu">
-                <button class="arrow-left control" aria-label="Previous-image"></button>
-                <div  id="seta-esquerda"></div>
-                <button class="arrow-right control" aria-label="Next-image"></button>
-                <div id="seta-direita"></div>
+            <div class="container">
                 <div class="models">
                     <div class="models-item item">
                         <a href="">
@@ -132,7 +134,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <button class="botao-esquerdo"></button>
+                <div  id="seta-botao-esquerdo"></div>
+                <button class="botao-direito"></button>
+                <div id="seta-botao-direito"></div>
+            </div>          
             <div class="main-carrinho">
                 <div class="models-area"></div>
             </div>
@@ -185,14 +191,17 @@
                 <ul class="caixa">
                     <li class="details">
                     <img src="./assets/img/favoritos/hamburguer-doce.02.jpg" class="item current-item">
+                        <div class="botao-add">+</div>
                         <section class="info"> 
                             <h2>Hambúrguer de Nutella com Morango</h2>
+                            
                             <h3>R$15</h3>
                         </section>
                     </li>
                     <li class="details">
                     <li class="details">
                         <img src="./assets/img/favoritos/hambuguer-bacon03.jpg" class="item">
+                        <div class="botao-add">+</div>
                         <section class="info">
                             <h2>Hambúrguer de Bacon com queijo especial derretido</h2>
                             <h3>R$25</h3>
@@ -200,6 +209,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/favoritos/combo6.jpg" class="item">
+                        <div class="botao-add">+</div>
                         <section class="info">
                             <h2>Hambúrguer Master + Milkshake + Batatas + Bebida</h2>
                             <h3>R$30</h3>
@@ -207,6 +217,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/favoritos/hambuguer-costela.jpg" class="item">
+                        <div class="botao-add">+</div>
                         <section class="info">
                             <h2>Hambúrguer de Costela bovina com Presunto</h2>
                             <h3>R$30</h3>
@@ -214,6 +225,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/favoritos/hambuguer-doce.jpg" class="item">
+                        <div class="botao-add">+</div>
                         <section class="info">
                             <h2>Hambúrguer de Morango com Chantilly</h2>
                             <h3>R$20</h3>
@@ -221,6 +233,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/favoritos/combo3.jpg" class="item">
+                        <div class="botao-add">+</div>
                         <section class="info">
                             <h2>Hambúrguer Suculento + Batatas + Bebida</h2>
                             <h3>R$25</h3>
@@ -244,13 +257,15 @@
                 <ul class="caixa">
                     <li class="details">
                     <img src="./assets/img/combos/combo1.jpeg" class="item current-item">
-                        <section class="info">
+                    <div class="botao-add-combo">+</div>    
+                    <section class="info">
                             <h2>Hambúrguer Stacker + Batatas + Bebida</h2>
                             <h3>R$35,99</h3>
                         </section>
                     </li>
                     <li class="details">
                         <img src="./assets/img/combos/combo2.jpeg" class="item">
+                        <div class="botao-add-combo">+</div>
                         <section class="info">
                             <h2>Hambúrguer Master + Milkshake + Batatas + Bebida</h2>
                             <h3>R$45,99</h3>
@@ -258,6 +273,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/combos/combo3.jpeg" class="item">
+                        <div class="botao-add-combo">+</div>
                         <section class="info">
                             <h2>Hambúrguer Suculento + Batatas + Bebida</h2>
                             <h3>R$30,90</h3>
@@ -265,6 +281,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/combos/combo4.jpeg" class="item">
+                        <div class="botao-add-combo">+</div>
                         <section class="info">
                             <h2>4 Hambúrguer + 2 Batatas + 2 Bebidas</h2>
                             <h3>R$57,99</h3>
@@ -272,6 +289,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/combos/combo5.jpeg" class="item">
+                        <div class="botao-add-combo">+</div>
                         <section class="info">
                             <h2>Hambúrguer Tradicional + Batatas + Bebida</h2>
                             <h3>R$25,99</h3>
@@ -279,6 +297,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/combos/combo6.jpeg" class="item">
+                        <div class="botao-add-combo">+</div>
                         <section class="info">
                             <h2>Hambúrguer Baconroso + Batatas + Bebida</h2>
                             <h3>R$36,99</h3>
@@ -286,6 +305,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/combos/combo7.jpeg" class="item">
+                        <div class="botao-add-combo">+</div>
                         <section class="info">
                             <h2>Hambúrguer Cheddar + Batatas + Bebida</h2>
                             <h3>R$22,99</h3>
@@ -310,14 +330,15 @@
                 <ul class="caixa" id="doce">
                     <li class="details">
                     <img src="./assets/img/Hamburguer-doce/mini-hamburguer-doce-mms.jpg" class="item current-item">
+                    <div class="botao-add-doce">+</div>   
                         <section class="info">
                             <h2>Mini Hambúrguer doce com M&M's</h2>
                             <h3>R$20,50</h3>
                         </section>
-                        
                     </li>
                     <li class="details">
                         <img src="./assets/img/Hamburguer-doce/banana-com-nutella.jpg" class="item">
+                       <div class="botao-add-doce">+</div>
                         <section class="info">
                             <h2>Hambúguer de Banana com Nutella</h2>
                             <h3>R$24,99</h3>
@@ -325,6 +346,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/Hamburguer-doce/morango-com-queijo-coalho.jpg" class="item">
+                       <div class="botao-add-doce">+</div>
                         <section class="info">
                             <h2>Hambúguer de Morango com Queijo Coalho</h2>
                             <h3>R$28,90</h3>
@@ -333,6 +355,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/Hamburguer-doce/bombom-com-morango.jpg" class="item">
+                       <div class="botao-add-doce">+</div>
                         <section class="info"> 
                             <h2>Hambúguer de Bombom com Morango</h2>
                             <h3>R$29,99</h3>
@@ -340,6 +363,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/Hamburguer-doce/frutas-kiwi-morango-geleia-de-morango.jpg" class="item">
+                       <div class="botao-add-doce">+</div>
                         <section class="info">
                             <h2>Hambúguer de Morango e Kiwi com Geleia de Morango</h2>
                             <h3>R$19,99</h3>
@@ -347,6 +371,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/Hamburguer-doce/brownie-com-marshmallows.jpg" class="item">
+                       <div class="botao-add-doce">+</div>
                         <section class="info">
                             <h2>Hambúguer de Brownie com Marshmallows</h2>
                             <h3>R$28,52</h3>
@@ -354,6 +379,7 @@
                     </li>
                     <li class="details">
                         <img src="./assets/img/Hamburguer-doce/especial-páscoa.jpg" class="item">
+                       <div class="botao-add-doce">+</div>
                         <section class="info"> 
                             <h2>Hambúguer de Nutella com Morango</h2>
                             <h3>R$25,99</h3>
@@ -376,13 +402,15 @@
                         <ul class="caixa">
                             <li class="details">
                             <img src="./assets/img/favoritos/hambuguer-artesanal.jpg" class="item current-item">
-                                <section class="info">
+                            <div class="botao-add-salgado">+</div>    
+                            <section class="info">
                                     <h2>Hambúrguer Artesanal</h2>
                                     <h3>R$30,50</h3>
                                 </section>
                             </li>
                             <li class="details">
                                 <img src="./assets/img/favoritos/hambuguer-bacon03.jpg" class="item">
+                                <div class="botao-add-salgado">+</div>
                                 <section class="info">
                                     <h2>Hambúguer de BBacon</h2>
                                     <h3>R$34,99</h3>
@@ -390,6 +418,7 @@
                             </li>
                             <li class="details">
                                 <img src="./assets/img/favoritos/hambuguer-costela.jpg" class="item">
+                                <div class="botao-add-salgado">+</div>
                                 <section class="info">
                                     <h2>Hambúguer de Costela</h2>
                                     <h3>R$30,90</h3>
@@ -397,6 +426,7 @@
                             </li>
                             <li class="details">
                                 <img src="./assets/img/favoritos/hambuguer-peixe02.webp" class="item">
+                                <div class="botao-add-salgado">+</div>
                                 <section class="info"> 
                                     <h2>Hambúguer de Peixe</h2>
                                     <h3>R$29,99</h3>
@@ -404,6 +434,7 @@
                             </li>
                             <li class="details">
                                 <img src="./assets/img/favoritos/hamburguer-bacon.jpg" class="item">
+                                <div class="botao-add-salgado">+</div>
                                 <section class="info">
                                     <h2>Hambúguer de Bacon 0.2</h2>
                                     <h3>R$40,99</h3>
@@ -411,6 +442,7 @@
                             </li>
                             <li class="details">
                                 <img src="./assets/img/favoritos/hamburguer-cheedar.png" class="item">
+                                <div class="botao-add-salgado">+</div>
                                 <section class="info">
                                     <h2>Hambúguer de Cheddar</h2>
                                     <h3>R$28,52</h3>
@@ -418,6 +450,7 @@
                             </li>
                             <li class="details">
                                 <img src="./assets/img/favoritos/hamburguer-doritos.jpg" class="item">
+                                <div class="botao-add-salgado">+</div>
                                 <section class="info"> 
                                     <h2>Hambúguer de Doritos</h2>
                                     <h3>R$25,99</h3>
@@ -425,6 +458,7 @@
                             </li>  
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-fit01.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info">
                                 <h2>Hambúguer Fitness</h2>
                                 <h3>R$29,99</h3>
@@ -432,6 +466,7 @@
                         </li>
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-picanh.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info">
                                 <h2>Hambúguer de Picanha</h2>
                                 <h3>R$35,52</h3>
@@ -439,6 +474,7 @@
                         </li>
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-bacon1.webp" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info"> 
                                 <h2>Hambúguer de Bacon 0.3</h2>
                                 <h3>R$35,99</h3>
@@ -446,6 +482,7 @@
                         </li>  
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-duascarne.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info"> 
                                 <h2>Hambúguer Tradicional</h2>
                                 <h3>R$25,99</h3>
@@ -453,6 +490,7 @@
                         </li>  
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-fit02.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info">
                                 <h2>Hambúguer Fitness 0.2</h2>
                                 <h3>R$28,52</h3>
@@ -460,6 +498,7 @@
                         </li>
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-vegano.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info"> 
                                 <h2>Hambúguer de Vegano</h2>
                                 <h3>R$30,99</h3>
@@ -467,6 +506,7 @@
                         </li>  
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-frango02.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info">
                                 <h2>Hambúguer de Frango</h2>
                                 <h3>R$28,52</h3>
@@ -474,6 +514,7 @@
                         </li>
                         <li class="details">
                             <img src="./assets/img/favoritos/hamburguer-fitness.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info"> 
                                 <h2>Hambúguer Fitness 0.3</h2>
                                 <h3>R$35,99</h3>
@@ -481,6 +522,7 @@
                         </li>  
                         <li class="details">
                             <img src="./assets/img/favoritos/Hamburguer-vegetariano.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info">
                                 <h2>Hambúguer Vegetariano</h2>
                                 <h3>R$28,52</h3>
@@ -488,6 +530,7 @@
                         </li>
                         <li class="details">
                             <img src="./assets/img/favoritos/hambúrguer-frango.jpg" class="item">
+                            <div class="botao-add-salgado">+</div>
                             <section class="info"> 
                                 <h2>Hambúguer de Frango 0.2</h2>
                                 <h3>R$25,99</h3>
@@ -570,7 +613,6 @@
     </footer>
     <script src="./assets/js/user-menu.js"></script>
     <script src="./assets/js/slider.js"></script>
-    <script type="text/javascript" src="./assets/js/models.js"></script>
     <script type="text/javascript" src="./assets/js/pedidos-script.js"></script>
     <script src="./assets/js/carrosel.js"></script>
 </body>

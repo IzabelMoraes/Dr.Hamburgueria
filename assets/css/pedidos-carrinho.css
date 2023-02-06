@@ -3,11 +3,9 @@
 }
 
 .menu-openner {
-    margin-right: 15px;
-    font-size: 26px;
-    background-color: #a9dcff;
-    padding: 5px 20px;
-    border-radius: 5px;
+    margin-right: 0;
+    font-size: 22px;
+    padding: 5px 0;
 }
 
 .menu-openner span {
@@ -239,7 +237,7 @@ h1 {
     position: relative;
     bottom: 62px;
     left: 156px;
-
+    border-radius: 13px;
 }
 
 .modelsInfo--qtarea button {
@@ -430,6 +428,11 @@ h1 {
     background-color: rgb(245, 36, 36);
 }
 
+.botao-cancela a{
+    text-decoration: none;
+    color: #000;
+}
+
 .adicionar-botao{
     font-family: 'Sofia Sans';
     font-weight: 600;
@@ -439,7 +442,7 @@ h1 {
     border: 1px solid #000000;
     cursor: pointer;
     height: 33px;
-    margin-right: 50vw;
+    margin-right: 48vw;
 }
 
 .adicionar-botao:hover{
@@ -450,3 +453,61 @@ h1 {
     text-decoration: none;
     color: #000;
 }
+
+.botao-esquerdo{
+    position: absolute;
+    right: 0.5rem;
+    bottom: -285px;
+    transform: translateY(-50%);
+    z-index: 100;
+    opacity: 90%;
+    background: #E38201 center no-repeat ;
+    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 10%);
+    border-color: #ffffff00;
+    border-radius: 0.625rem;
+    height: 6.5rem;
+    width: 3rem;
+}
+
+.botao-direito{
+    position: absolute;
+    left: 2rem;
+    bottom: -285px;
+    z-index: 100;
+    transform: translateY(-50%);
+    opacity: 90%;
+    background: #E38201 center no-repeat ;
+    box-shadow: 0rem 0rem 1.5rem rgb(0 0 0 / 10%);
+    border-color: #ffffff00;
+    border-radius: 0.625rem;
+    height: 6.5rem;
+    width: 3rem;
+}
+
+.botao-direito:hover , .botao-esquerdo:hover{
+    cursor: pointer;
+}
+
+#seta-botao-esquerdo {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px rgb(0, 0, 0) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(42deg);
+    left: 2.5rem;
+    bottom: -203px;
+    z-index: 1000;
+  }
+  
+  #seta-botao-direito {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px  rgb(0, 0, 0) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(220deg);
+    right: 1rem;
+    bottom: -203px;
+    z-index: 1000;
+  }
