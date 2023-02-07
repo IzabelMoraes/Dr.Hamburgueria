@@ -45,7 +45,8 @@ main{
   background-color:#48d05f;
 }
 
-.button {
+.button { 
+  font-family: 'Sofia Sans';
   color: #000;
   text-decoration: none;
 }
