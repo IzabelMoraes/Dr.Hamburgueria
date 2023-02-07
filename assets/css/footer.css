@@ -125,6 +125,16 @@
     left: 10rem;
 }
 
+.tooltip-login .tooltiptext-login.span{
+    width: 177px;
+    height: 67px;
+}
+
+.tooltiptext-login.span{
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -151,6 +161,7 @@
     z-index: 1;
     bottom:16rem;
     left: 10rem;
+    line-height: 21px;
 }
 
 .tooltip-login:hover .tooltiptext-login {
