@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;300;400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/barra-pesquisa.css">
+    <link rel="stylesheet" href="./assets/css/usuário.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/botao-volta.css">
     <link rel="stylesheet" href="./assets/css/pedidos.css">
@@ -13,7 +17,49 @@
     <title>Dr. Hambúrgueria</title>
 </head>
 <body onload="loadInfo()">
-    <header>
+        <header  id="voltar">
+            <section class="menu">
+                <img src="./assets/img/icons-header/logo.png" alt="" id="logo">
+                <h1 id="nome-empresa">Dr.Hamburgueria</h1>
+                <nav>
+                    <ul class="menu-comeco">
+                        <li>
+                            <div class="search-box">
+                                <input type="text" class="search-text" placeholder="Pesquisar" list="historico">
+                                <a href="#" class="lupa-botao">
+                                    <img src="./assets/img/icons-header/lupa.svg" alt="Lupa" onclick="executar()">
+                                </a>
+                                <datalist id="historico">
+                                    <option value="Hambúguer"></option>
+                                    <option value="Promoção"></option>
+                                    <option value="Hambúguer Doce"></option>
+                                    <option value="Favoritos"></option>
+                                    <option value="Hambúguer Salgado"></option>
+                                    <option value="Combo"></option>
+                                </datalist>
+                            </div>
+                        </li>
+                        <li>          
+                            <div class="menu-openner">
+                                <span>0</span>        
+                                <span class="material-icons"><a href="pedidos.html"><img src="./assets/img/icons-header/carrinho-compras.png" alt="Seus pedidos" class="icon-header"></a></span>
+                            </div>
+                        </li>
+                        <li><a href="login.html" id="entre__cadastro">Entre ou cadastre-se</a></li>
+                    </ul>
+                    <section id="menu-nav">
+                        <button id="btn" aria-label="Abrir menu de Usuário" aria-haspopup="true" aria-expanded="false" aria-controls="menu">
+                            <a href="#"><img src="./assets/img/icons-header/usuario-icon.png" alt="" class="icon-header-menu"></a>
+                        </button>
+                        <ul id="usuario" role="menu">
+                            <li>Seu Perfil</li>
+                            <li>Pedidos</li>
+                            <li>Pagamentos</li>
+                            <li>Configurações</li>
+                        </ul>
+                    </section>
+                </nav>
+            </section>
         <a href="index.html" id="volta"><img src="./assets/img/arrow.png" alt="Voltar para a página inicial"></a>
     </header> 
 
@@ -70,15 +116,15 @@
         <div class="formulario">
             <form action="/action_page.php">
               <label for="name">Nome</label>
-              <input type="text" id="name" name="name" placeholder="Nome completo">
+              <input type="text" id="name" name="name" placeholder="Nome completo" class="input-texto">
               <div id="div1">
                 <label for="endereco">Endereço</label>
-                <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+                <input type="text" id="endereco" name="endereco" placeholder="Endereço" class="input-texto">
               </div>
 
               <div id="div2">
                 <label for="complemento">Complemento</label>
-                <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                <input type="text" id="complemento" name="complemento" placeholder="Complemento" class="input-texto">
               </div>
             </form>
 

@@ -2,7 +2,7 @@ main{
   font-family: 'Sofia Sans';
 }
 
-input[type=text]{
+.input-texto{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

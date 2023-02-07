@@ -9,10 +9,10 @@ header{
     top: 1rem;
 }
 
-.menu h1{
+#nome-empresa{
     position: relative;
     left: 2.75rem;
-    top: 0.625rem;
+    top: 17px;
 }
 
 .menu-comeco li{
@@ -36,6 +36,7 @@ header{
     position: relative; 
     left: 1.875rem; 
     right: 0.188rem;
+    top: 6px;
 }
 
 nav a{
