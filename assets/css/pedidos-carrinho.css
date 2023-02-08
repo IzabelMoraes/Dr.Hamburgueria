@@ -44,7 +44,7 @@
 
 .main-carrinho {
     flex:1;
-    padding:20px;
+    padding: 0 31px;
 }
 
 h1 {
@@ -61,6 +61,7 @@ h1 {
     justify-content: left;
     overflow-x: auto;
     padding: 1rem 0;
+    overflow: hidden;
 }
 
 .models-item {
@@ -69,9 +70,16 @@ h1 {
     text-align: center;
     align-items: center;
     margin-left: 1.875rem;
-    box-shadow: 0rem 0rem 0.5rem 0rem rgb(0 0 0 / 16%);
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(255 153 0);
     overflow: hidden;
     height: 19rem;
+    transition: all 0.2s ease-out; 
+}
+
+.models-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    border-color: rgb(255 153 0);
 }
 
 .models-item a {

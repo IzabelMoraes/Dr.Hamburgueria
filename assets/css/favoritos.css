@@ -43,8 +43,9 @@
     text-align: center;
     align-items: center;
     margin-left: 1.875rem;
-    box-shadow: 0rem 0rem 0.5rem 0rem rgb(0 0 0 / 16%);
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(255 153 0);
     padding-bottom: 1.563rem;
+    transition: all 0.2s ease-out; 
    }
 
 .details{
@@ -143,13 +144,13 @@
 .caixa li:hover{ 
     transform: scale(1.1);
     cursor: pointer;
-    border-color: #333;
+    border-color: rgb(255 153 0);
    }
 
 .details:hover{
     transform: scale(1.1);
     cursor: pointer;
-    border-color: #333;
+    border-color: rgb(255 153 0);
 }
 
 
@@ -223,6 +224,7 @@
     width: 2rem;
     height: 2rem;
     position: relative;
-    bottom: 9.5rem;
-    left: 5rem;
+    bottom: 9.75rem;
+    left: 4.5rem;
+
   }
