@@ -88,6 +88,13 @@
     margin-bottom: 1rem;
     font-family: 'Sofia Sans';
 }
+.sombra1:hover{
+    box-shadow: 4px 4px 5px -1px #5c5a5a;
+}
+
+#sombra:hover{
+    box-shadow: 4px 4px 5px -1px #5c5a5a;
+}
 
 .cadastro-botao button:first-child{
     margin-top: 4rem;
