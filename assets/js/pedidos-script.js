@@ -11,7 +11,7 @@ modelsJson.map((item, index)=>{
     //Vamos pegar a estrutura HTML que tem a class 'models-item', 
     //dentro da class 'models' e clonar - true indica para pegar subitens
     //let modelsItem = document.querySelector('.models .models-item').cloneNode(true);
-    //Depois de ajustado com a constante
+
     let modelsItem = c('.models .models-item').cloneNode(true);
     // preenchendo as informações dos modelos
     //acrescentar um identificador para a pizza - FrontEnd
